@@ -7,6 +7,53 @@
     <link rel="icon" href="slike/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <style>
+        .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Remove default background */
+    border: none; /* Remove any border */
+}
+
+.carousel-control-prev-icon {
+    width: 30px; /* Set desired width */
+    height: 30px; /* Set desired height */
+    background-image: none; /* Remove default arrow */
+    position: relative; /* For positioning the arrow */
+}
+
+.carousel-control-prev-icon::after {
+    content: ''; /* Create a custom arrow */
+    position: absolute;
+    left: 10px; /* Position it */
+    top: 5px; /* Position it */
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent; /* Create the arrow */
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid black; /* Arrow color */
+}
+
+.carousel-control-next-icon {
+    width: 30px; /* Set desired width */
+    height: 30px; /* Set desired height */
+    background-image: none; /* Remove default arrow */
+    position: relative; /* For positioning the arrow */
+}
+
+.carousel-control-next-icon::after {
+    content: ''; /* Create a custom arrow */
+    position: absolute;
+    left: 10px; /* Position it */
+    top: 5px; /* Position it */
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent; /* Create the arrow */
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid black; /* Arrow color */
+}
+
+
+    </style>
     <script src="https://kit.fontawesome.com/334644bbe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -60,7 +107,7 @@
             </nav>
             <div class="container-flex-navbar-2">
                 <div class="nav-item">
-                    <a class="nav-link jezik-link hrv-en-link" href="./okrugliStolovi.html">HRV</a>
+                    <a class="nav-link jezik-link hrv-en-link" href="./okrugliStolovi.html">HR</a>
                 </div>
                 <div class="nav-item">
                     <a class="nav-link jezik-link en-en-link" href="./okrugliStolovi-en.html">EN</a>
@@ -101,6 +148,110 @@
             </p>
         </div>
     </div>
+    <div id="carouselExample" class="carousel slide carousel-qna">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="container-carousel-qna">
+                  <p><span class="qna-bold">Q: How did your international 
+                    experience impact your personal or academic growth?</span></p>
+                  <p><span class="qna-bold">A: </span>It has for sure made 
+                    me more independent since I had to live 
+                    alone for the first time in my life, but especially more open 
+                    to different viewpoints and cultures since the city I live in 
+                    is much more multicultural than Zagreb/Croatia. For the academic growth, 
+                    I would say it helped me focus on the important aspects of education in 
+                    general, but my studies as a whole because of the different approach 
+                    to education in Denmark. </p>
+                    <p><span class="qna-bold">Q: What’s one piece of advice you’d 
+                        give to someone considering studying abroad?</span></p>
+                      <p><span class="qna-bold" >A: </span>Just do it, don’t 
+                        be scared because in the end it’s going to be 
+                        the best experience in your life and it’s going to be something you 
+                        will remember forever.</p>
+                        <br>
+                    <p>~Antun Zelić</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" >
+              <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="container-carousel-qna">
+                  
+                    <p><span class="qna-bold">Q: What was your biggest challenge while studying 
+                        abroad, and how did you overcome it? </span></p>
+                      <p><span class="qna-bold">A: </span>Honestly, the biggest challenge 
+                        was dealing with all the requested paperwork regarding the Erasmus+ 
+                        scholarship, and getting fast and sufficient answers from my home and 
+                        host institutions. I overcame it by doing the research, asking a 
+                        lot of questions and being determined in my goal to study abroad.</p>
+                        <p><span class="qna-bold">Q: What’s your favorite memory from your 
+                            time abroad? </span></p>
+                          <p><span class="qna-bold" >A: </span>It's really hard to choose one, 
+                            but I think it would be the last dinner and night out I had with all 
+                            of my flatmates. Even though it was really sad because our first flatmate 
+                            was leaving the next day, my heart was so filled with love for those 
+                            people that I felt so happy and grateful to have met them and have the 
+                            privilege to share my whole Erasmus experience and my home with them. </p>
+                            <br>
+                        <p>~Lea Komočar</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" >
+              <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="container-carousel-qna">
+                    <p><span class="qna-bold">Q: What's one piece of advice you'd give to someone 
+                        considering studying abroad?</span></p>
+                      <p><span class="qna-bold">A: </span>I would advise everyone to study abroad, 
+                        as I believe it’s an excellent opportunity to not only explore a new 
+                        environment but also to get to know themselves better. It allows you 
+                        to embrace everything that’s offered to you, so you can later implement 
+                        those experiences and knowledge in your own country.</p>
+                        <p><span class="qna-bold">Q: What's your favorite memory from your time 
+                            abroad?</span></p>
+                          <p><span class="qna-bold" >A: </span>My favorite memory from my time abroad 
+                            is a sampling trip we had in Northern Spain. During the trip, my friend 
+                            and I accidentally bumped our assistant, and he fell off the boat into 
+                            a reservoir. In the end, we all ended up swimming together, and it 
+                            turned into a hilarious and unforgettable experience!</p>
+                            <br>
+                        <p>~Lea Raos</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" >
+                <div class="d-flex align-items-center justify-content-center h-100">
+                  <div class="container-carousel-qna">
+                    <p><span class="qna-bold">Q: What was your biggest challenge while studying 
+                        abroad, and how did you overcome it?</span></p>
+                    <p><span class="qna-bold">A: </span>One of the biggest challenges I faced 
+                        was balancing my social life with academics. Studying in a new country 
+                        is an amazing experience, but adapting to a different academic system 
+                        can be tricky. With so many events for Erasmus students, finding that 
+                        balance became really important. </p>
+                    <p><span class="qna-bold">Q: What's your favorite memory from your time 
+                              abroad?</span></p>
+                    <p><span class="qna-bold" >A: </span>My Erasmus experience broadened my horizons, 
+                        taught me to solve problems independently, gave me the chance to study 
+                        in English and improve it, opened up professional opportunities, and 
+                        introduced me to amazing people who taught me so much and became my friends.
+                    </p>
+                    <br>
+                    <p>~Lucija Marić</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     
 
         <div id="footer">
